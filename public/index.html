@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Local Bar</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="appLogo" src="img/logo.svg" alt="local bar logo">
+            <form id="theCity">
+                <input class="bigSearch" type="text" name="cityName" autocomplete="off" placeholder="What city are you in..." autofocus>
+            </form>
+        </div>
+    </header>
+    <main>
+        <h2 class="message">Enter a city to find the top 20 rated local bars</h2>
+        <div class="container flex" id="bars">
+        </div>
+    </main>
+    <footer>
+        <a href="http://yelp.com"><img src="img/yelp.png" class="yelpLogo" alt="yelp logo"></a>
+        <p class="yelpPower">powered by yelp</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

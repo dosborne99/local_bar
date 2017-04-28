@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background: url('../img/background2.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	margin: 140px 0 122px 0;
+}
+
+header {
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.35));
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	border-bottom: 1px solid #fff;
+}
+
+header form {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+footer {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bigSearch {
+	width: 295px;
+	border: 1px solid #fff;
+	background-color: #dedede;
+	border-radius: 17px;
+	padding: 8px;
+}
+
+.bigSearch::placeholder {
+	font-style: italic;
+}
+
+.bigSearch:focus {
+	outline: none;
+	background-color: #ffb6c1;
+}
+
+.message {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	font-size: 3.3em;
+	font-weight: normal;
+	width: 500px;
+	transform: translate3d(50%, -75%, 0);
+	color: #fff;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.barList {
+	font-family: 'Trirong', serif;
+	width: 49%;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 4px;
+	color: #070707;
+	text-align: center;
+}
+
+.barList h2 {
+	font-size: 1.4em;
+	margin: 0 0 10px 0;
+	padding-top: 5px;
+	margin-bottom: 3px;
+}
+.barAddress {
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 0;
+}
+.barRating {
+	text-align: center;
+	font-size: 10px;
+}
+.barRating p {
+	margin: 2px;
+	padding-bottom: 5px;
+}
+.barRating img {
+	width: 100px;
+}
+
+.yelpLogo {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	padding-top: 20px;
+}
+
+.yelpPower {
+	text-align: center;
+	margin-top: -12px;
+	padding: 5px 5px 10px 5px;
+	font-size: 10px;
+	color: #aaa;
+	font-style: italic;
+}
+
+@media (max-width: 769px) {
+	header {
+		height: 165px;
+	}
+	header form {
+		right: 50%;
+		top: 85px;
+		transform: translateX(50%);
+	}
+	body {
+		margin: 190px 0 122px 0;
+	}
+	.bigSearch {
+		padding: 6px;
+		font-size: .9em
+	}
+	.appLogo {
+		position: absolute;
+		top: 10px;
+		width: 85px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.message {
+		font-size: 2.3em;
+		width: 380px;
+		padding: 0 15px;
+	}
+	.barList {
+		width: 90%;
+	}
+	.flex {
+		justify-content: space-around;
+	}
+}

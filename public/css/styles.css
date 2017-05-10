@@ -53,8 +53,7 @@ footer {
 
 .bigSearch {
 	width: 295px;
-	border: 1px solid #fff;
-	background-color: #dedede;
+	border: 1px solid #ff0000;
 	border-radius: 17px;
 	padding: 8px;
 }
@@ -65,7 +64,7 @@ footer {
 
 .bigSearch:focus {
 	outline: none;
-	background-color: #ffb6c1;
+	border: 1px solid #ff0000;
 }
 
 .message {

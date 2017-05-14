@@ -69,15 +69,23 @@ footer {
 
 .message {
 	position: absolute;
+	padding: 0 10px;
 	right: 50%;
 	top: 50%;
 	text-align: center;
 	font-family: 'Handlee', cursive;
-	font-size: 3.3em;
-	font-weight: normal;
 	width: 525px;
-	transform: translate3d(50%, -75%, 0);
+	transform: translate3d(50%, -50%, 0);
 	color: #fff;
+}
+
+.message h2 {
+	font-size: 3.3em;
+	font-weight: normal
+}
+
+.message p {
+	font-size: 1.8em;
 }
 
 .flex {
@@ -161,9 +169,14 @@ footer {
 		transform: translateX(50%);
 	}
 	.message {
-		font-size: 2.3em;
 		width: 380px;
 		padding: 0 15px;
+	}
+	.message h2 {
+		font-size: 2.3em;
+	}
+	.message p {
+		font-size: 1em;
 	}
 	.barList {
 		width: 90%;

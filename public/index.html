@@ -13,14 +13,17 @@
 <body>
     <header>
         <div class="container">
-            <img class="appLogo" src="img/logo.svg" alt="local bar logo">
+            <a href="index.html"><img class="appLogo" src="img/logo.svg" alt="local bar logo"></a>
             <form id="theCity">
                 <input class="bigSearch" type="text" name="cityName" autocomplete="off" placeholder="What city are you in..." autofocus>
             </form>
         </div>
     </header>
     <main>
-        <h2 class="message">Enter a city to find the 20 top-rated local bars</h2>
+        <div class="message">
+            <h2>Enter a city for the 20 top-rated local bars</h2>
+            <p>sorted by highest star rating and the most reviews, since that's what really matters</p>
+        </div>
         <div class="container flex" id="bars">
         </div>
     </main>

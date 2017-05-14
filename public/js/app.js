@@ -41,7 +41,8 @@ $(function(){
         var arrayOfBars = [];
     	var city = $(".bigSearch").val();
         $('.barList').remove();
-        $('.message').html(city + ' bars... <br>' + 'coming right up!');
+        $('.message h2').html(city + ' bars... <br>' + 'coming right up!');
+        $('.message p').html('');
         $.ajax({
             url:url,
             data: {

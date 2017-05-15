@@ -65,7 +65,7 @@ $(function(){
                                         "<div class='barRating'>" + "<img src='" + setRatingsImage(item.rating) + "' alt='yelp star rating image'>" + "<p>based on " + item.review_count + " reviews </p>" +
                                         "</div>" +
                                     "</div>";
-                $('.message').html('');
+                $('.message h2').html('');
                 $("#bars").append(individualBar);
             });
         });

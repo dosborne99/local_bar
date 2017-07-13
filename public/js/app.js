@@ -50,13 +50,16 @@ $(function(){
             }
         }).done(function(bars){
             bars.businesses.forEach(function(bar){
+                var average_rating = Math.floor(bar.review_count / bar.rating);
                 arrayOfBars.push({'name':bar.name,
                                   'rating':bar.rating,
                                   'review_count':bar.review_count,
-                                  'address':bar.location.display_address});
+                                  'address':bar.location.display_address,
+                                  'average_rating':average_rating});
             });
             arrayOfBars.sort(function(a,b){
-                return b.rating - a.rating || b.review_count - a.review_count;
+                // return b.rating - a.rating || b.review_count - a.review_count;
+                return b.average_rating - a.average_rating || b.review_count - a.review_count;
             });
             arrayOfBars.forEach(function(item){
                 var individualBar = "<div class='barList'>" + 
